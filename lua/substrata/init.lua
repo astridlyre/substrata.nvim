@@ -97,7 +97,7 @@ local set_groups = function()
     StorageClass = { fg = c.cyan }, -- static, register, volatile, etc.
     Structure = { fg = c.pink }, -- struct, union, enum, etc.
     Constant = { fg = c.pink }, -- any constant
-    Comment = { fg = c.gray, bg = c.none, style = cfg.comment_style }, -- italic comments
+    Comment = { fg = c.gray, bg = c.bg2, style = cfg.comment_style }, -- italic comments
     Conditional = { fg = c.blue, bg = c.none, style = cfg.keyword_style }, -- italic if, then, else, endif, switch, etc.
     Keyword = { fg = c.blue, bg = c.none, style = cfg.keyword_style }, -- italic for, do, while, etc.
     Repeat = { fg = c.blue, bg = c.none, style = cfg.keyword_style }, -- italic any other keyword
@@ -179,13 +179,13 @@ local set_groups = function()
     TSAttribute = { fg = c.pink }, -- (unstable) TODO: docs
     TSBoolean = { fg = c.pink, bg = c.none, style = cfg.boolean_style }, -- true or false
     TSCharacter = { fg = c.red }, -- For characters.
-    TSComment = { fg = c.gray, bg = c.none, style = cfg.comment_style }, -- For comment blocks.
+    TSComment = { fg = c.gray, bg = c.bg2, style = cfg.comment_style }, -- For comment blocks.
     TSConditional = { fg = c.pink, style = cfg.keyword_style }, -- For keywords related to conditionnals.
     TSConstant = { fg = c.fg }, -- For constants
     TSConstBuiltin = { fg = c.pink, style = "italic" }, -- For constants that are built in the language: `nil` in Lua.
     TSConstMacro = { fg = c.cyan }, -- For constants that are defined by macros: `NULL` in C.
     TSConstructor = { fg = c.red }, -- For constructor calls and definitions: `= { }` in Lua, and Java constructors.
-    TSError = { fg = c.red }, -- For syntax/parser errors.
+    TSError = { style = "underline" }, -- For syntax/parser errors.
     TSException = { fg = c.blue }, -- For exception related keywords.
     TSField = { fg = c.blue }, -- For fields.
     TSFloat = { fg = c.pink }, -- For floats.
