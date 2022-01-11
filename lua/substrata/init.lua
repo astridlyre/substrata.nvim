@@ -126,7 +126,7 @@ local set_groups = function()
     Debug = { fg = c.red }, -- debugging statements
     Underlined = { fg = c.cyan, bg = c.none, style = "underline" }, -- text that stands out, HTML links
     Ignore = { fg = c.gray_alt }, -- left blank, hidden
-    Error = { style = "bold,underline" }, -- any erroneous construct
+    Error = { fg = c.red, bg = c.none, style = "bold,underline" }, -- any erroneous construct
     Todo = { fg = c.cyan, bg = c.none, style = "bold,italic" }, -- anything that needs extra attention; mostly the keywords TODO FIXME and XXX
     -- HTML
     htmlArg = { fg = c.light_blue, style = "italic" },
