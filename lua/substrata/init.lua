@@ -48,7 +48,7 @@ local set_groups = function()
     Folded = { fg = c.gray, c.none, style = "italic" },
     FoldColumn = { fg = c.blue },
     IncSearch = { style = "reverse" },
-    LineNr = { fg = c.gray },
+    LineNr = { fg = c.bg2 },
     CursorLineNr = { fg = c.gray_alt },
     MatchParen = { fg = c.light_cyan, style = "bold" },
     ModeMsg = { fg = c.cyan, style = "bold" },
