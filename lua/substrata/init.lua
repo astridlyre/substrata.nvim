@@ -61,7 +61,7 @@ local set_groups = function()
     Question = { fg = c.green, style = "bold" },
     QuickFixLine = { fg = c.blue, bg = c.bg1, style = "bold,italic" },
     qfLineNr = { fg = c.blue, bg = c.bg1 },
-    Search = { style = "reverse" },
+    Search = { bg = c.bg4 },
     SpecialKey = { fg = c.bg3 },
     SpellBad = { fg = c.red, bg = c.none, style = "italic,undercurl" },
     SpellCap = { fg = c.blue, bg = c.none, style = "italic,undercurl" },
